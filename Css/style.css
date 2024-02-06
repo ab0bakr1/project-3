@@ -1,15 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.navbar-brand{
-    height: 80px;
-}
-.navbar-brand img {
-    height: 100%;
-    width: 100%;
-}
 .POPULAR .card::after{
     position: absolute;
     content: "";
