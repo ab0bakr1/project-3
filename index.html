@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/all.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Project-3</title>
+</head>
+<body>
+    <header class="position-fixed top-0 w-100 bg-dark bg-opacity-50 shadow" style="z-index: 1999;">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand me-3" href="#">
+                <img src="./img/logo.png" class="img-fluid" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll fs-5 text-capitalize" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      trips
+                    </a>
+                    <ul class="dropdown-menu text-capitalize">
+                      <li><a class="dropdown-item" href="#">aedid</a></li>
+                      <li><a class="dropdown-item" href="#">almhedarh</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">blaashr</a></li>
+                      <li><a class="dropdown-item" href="#">altoahy</a></li>
+                      <li><a class="dropdown-item" href="#">khalha</a></li>
+                      <li><a class="dropdown-item" href="#">dmon</a></li>
+                      <li><a class="dropdown-item" href="#">more...</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled text-light" aria-disabled="true">about</a>
+                  </li>
+                </ul>
+              </div>
+              <form class="d-flex gap-2" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-warning text-capitalize" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    login
+                </button>
+                
+              </form>             
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header bg-warning">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-warning">Email Address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@example.com">
+                        <p>Lorem ipsum dolor sit, amet consectetur </p>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label text-warning">Password</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput2" placeholder="*****">
+                      </div>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label text-warning" for="flexSwitchCheckDefault">Remmember Me</label>
+                      </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                      <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-outline-warning">Login</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Header end -->
+    <!-- socail -->
+    <div class="position-fixed top-50 left-0" style="z-index: 7;">
+        <div class="socail d-flex flex-column gap-3 justify-content-center align-items-center fs-2 px-4 px-md-1 bg-dark bg-opacity-25 rounded-3">
+            <a href="#"><i class="fa-brands fa-facebook text-warning"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-warning"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-warning"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube text-warning"></i></a>
+        </div>
+    </div>
+    <!-- socail end -->
+    <!-- hero -->
+    <main style="height: 100svh;">
+        <div id="carouselExampleCaptions" class="carousel slide h-100">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-warning" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-warning" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="bg-warning" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="bg-warning" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner h-100">
+              <div class="carousel-item h-100 active">
+                <img src="./img/hero1.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+                  <h5 class="text-warning text-uppercase">masjid almhthar</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                  <button class="btn btn-outline-warning text-capitalize">visit now</button>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="./img/hero2.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+                  <h5 class="text-warning text-uppercase">Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                  <button class="btn btn-outline-warning text-capitalize">visit now</button>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="./img/hero3.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+                  <h5 class="text-warning text-uppercase">Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                  <button class="btn btn-outline-warning text-capitalize">visit now</button>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="./img/hero4.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+                  <h5 class="text-warning text-uppercase">Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                  <button class="btn btn-outline-warning text-capitalize">visit now</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </main>
+    <!-- hero end-->
+    <section class="py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-warning text-uppercase">welcome</h3>
+                    <p class="text-capitalize text-light fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique placeat, delectus porro dolorum voluptatem labore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque dolorum dignissimos accusantium quod ducimus consequuntur iure ratione quisquam facilis adipisci.</p>
+                    <button type="button" class="btn btn-outline-warning text-capitalize">learn more</button></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-warning text-uppercase text-center fs-1 fw-bold py-4">Lorem ipsum dolor sit. Lorem, ipsum dolor.</h2>
+                </div>
+                <div class="col-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-uppercase text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                aedid
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-uppercase text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                almhedarh
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-uppercase text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                blaashr
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="py-3 bg-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <h2 class="text-warning text-uppercase text-center fs-1 fw-bold py-4">Translate from arabic to english</h2>
+              </div>
+              <div class="col-12">
+                  <p class="text-capitalize text-warning fs-4">write and Translate <a class="text-uppercase text-light text-decoration-none">press here</a></p>
+                  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header bg-warning">
+                          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">copied</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          تم نسخ النص يسطا
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-warning" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-warning text-capitalize px-5 fs-5" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" title="copy to clipboard">copy</button>
+                  <textarea class="form-control mt-3" name="Translate" id="Translate" cols="30" rows="5" placeholder="Translate"></textarea>
+              </div>
+          </div>
+          <hr class="border-warning my-5">
+          <div class="row">
+            <div class="col-12">
+                <h2 class="text-warning text-uppercase text-center fs-1 fw-bold py-4">Translate from arabic to Español</h2>
+            </div>
+            <div class="col-12">
+                <p class="text-capitalize text-warning fs-4">Escribe y traduce <a class="text-uppercase text-light text-decoration-none">PULSA AQUÍ</a></p>
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header bg-warning">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">copied</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        تم نسخ النص يسطا
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-warning" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-outline-warning text-capitalize px-5 fs-5" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" title="copy to clipboard">Copiar</button>
+                <textarea class="form-control mt-3" name="Translate" id="Translate" cols="30" rows="5" placeholder="Translate"></textarea>
+            </div>
+        </div>
+        <hr class="border-warning my-5">
+        <div class="row">
+          <div class="col-12">
+              <h2 class="text-warning text-uppercase text-center fs-1 fw-bold py-4">Translate from arabic to French</h2>
+          </div>
+          <div class="col-12">
+              <p class="text-capitalize text-warning fs-4">Écrivez et traduisez <a class="text-uppercase text-light text-decoration-none">APPUYEZ ICI</a></p>
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header bg-warning">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">copied</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      تم نسخ النص يسطا
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-warning" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-outline-warning text-capitalize px-5 fs-5" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" title="copy to clipboard">copie</button>
+              <textarea class="form-control mt-3" name="Translate" id="Translate" cols="30" rows="5" placeholder="Translate"></textarea>
+          </div>
+      </div>
+      </div>
+  </section>
+  <hr>
+  <div class="w-100" style="background: url(./img/hero3.png); height: 400px; background-size: cover; background-attachment: fixed;"></div>
+  <section class="bg-dark py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                <h3 class="text-uppercase text-warning text-center fs-1 fw-bold">popular destinations in tarim</h3>
+              </div>
+          </div>
+          <hr class="border-warning my-4">
+          <div class="row justify-content-between justify-content-sm-center align-items-center  gap-5 POPULAR">
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="./img/hero1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-warning fw-bold">Go somewhere</a>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="./img/hero1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-warning fw-bold">Go somewhere</a>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="./img/hero1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-warning fw-bold">Go somewhere</a>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="./img/hero1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-warning fw-bold">Go somewhere</a>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="./img/hero1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-warning fw-bold">Go somewhere</a>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="./img/hero1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-warning fw-bold">Go somewhere</a>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="./img/hero1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-warning fw-bold">Go somewhere</a>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="./img/hero1.png" class="card-img-top" alt="...">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-warning fw-bold">Go somewhere</a>
+                </div>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <div class="w-100" style="background: url(./img/hero3.png); height: 400px; background-size: cover; background-attachment: fixed;"></div>
+  <section class="bg-dark py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <h3 class="text-uppercase text-warning text-center fs-1 fw-bold">Photographers</h3>
+            </div>
+        </div>
+        <hr class="border-warning my-4">
+        <div class="row justify-content-between align-items-center gap-5 PHOTOGRAPHERS">
+          <div class="card mx-auto" style="width: 18rem;background: url(./img/team1.png); background-position: center;background-size: cover; height: 400px;background-color: rgb(175,104,52);">
+            <div class="card-body px-0 d-flex justify-content-between flex-column">
+              <div class="">
+                <h5 class="text-center text-capitalize text-warning">All thanks and appreciation</h5>
+                <p class="text-light fw-bold">2024/2/4</p>
+              </div>
+              <div class="">
+                <img src="./img/team3.png" class="bg-warning rounded-circle" style="height: 100px; width: 80px;" alt="">
+                <p class="text-capitalize text-warning fs-4 fw-bold">abobkr almashhor</p>
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width: 18rem;background: url(./img/team1.png); background-position: center;background-size: cover; height: 400px;background-color: rgb(175,104,52);">
+            <div class="card-body px-0 d-flex justify-content-between flex-column">
+              <div class="">
+                <h5 class="text-center text-capitalize text-warning">All thanks and appreciation</h5>
+                <p class="text-light fw-bold">2024/2/4</p>
+              </div>
+              <div class="">
+                <img src="./img/team3.png" class="bg-warning rounded-circle" style="height: 100px; width: 80px;" alt="">
+                <p class="text-capitalize text-warning fs-4 fw-bold">abobkr almashhor</p>
+              </div>
+            </div>
+          </div>
+          <div class="card mx-auto" style="width: 18rem;background: url(./img/team1.png); background-position: center;background-size: cover; height: 400px;background-color: rgb(175,104,52);">
+            <div class="card-body px-0 d-flex justify-content-between flex-column">
+              <div class="">
+                <h5 class="text-center text-capitalize text-warning">All thanks and appreciation</h5>
+                <p class="text-light fw-bold">2024/2/4</p>
+              </div>
+              <div class="">
+                <img src="./img/team3.png" class="bg-warning rounded-circle" style="height: 100px; width: 80px;" alt="">
+                <p class="text-capitalize text-warning fs-4 fw-bold">abobkr almashhor</p>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+<hr>
+<section class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-warning text-uppercase text-center fs-1 fw-bold my-4">tarim news</h2>
+    </div>
+    <hr class="border-warning my-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase text-warning fw-bold">Dome Palace</h5>
+                <p><i class="fa-regular fa-calendar-days"></i> 2024/2/4</p>
+                <hr>
+                <p class="card-text py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id illo dolor aspernatur eum sequi est consequuntur placeat doloremque veniam? Fugit nulla eaque nobis distinctio fugiat necessitatibus deserunt veniam molestias animi ullam. Provident asperiores alias reprehenderit recusandae eum consectetur id?</p>
+                <hr>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-podcast"></i> podcast</button>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-clock"></i> 44 mins</button>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-play"></i> play now</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="./img/hero4.png" class="img-fluid rounded-end h-100" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/hero4.png" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase text-warning fw-bold">Dome Palace</h5>
+                <p><i class="fa-regular fa-calendar-days"></i> 2024/2/4</p>
+                <hr>
+                <p class="card-text py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id illo dolor aspernatur eum sequi est consequuntur placeat doloremque veniam? Fugit nulla eaque nobis distinctio fugiat necessitatibus deserunt veniam molestias animi ullam. Provident asperiores alias reprehenderit recusandae eum consectetur id?</p>
+                <hr>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-podcast"></i> podcast</button>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-clock"></i> 44 mins</button>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-play"></i> play now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase text-warning fw-bold">Dome Palace</h5>
+                <p><i class="fa-regular fa-calendar-days"></i> 2024/2/4</p>
+                <hr>
+                <p class="card-text py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id illo dolor aspernatur eum sequi est consequuntur placeat doloremque veniam? Fugit nulla eaque nobis distinctio fugiat necessitatibus deserunt veniam molestias animi ullam. Provident asperiores alias reprehenderit recusandae eum consectetur id?</p>
+                <hr>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-podcast"></i> podcast</button>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-clock"></i> 44 mins</button>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-play"></i> play now</button>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="./img/hero4.png" class="img-fluid rounded-end h-100" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./img/hero4.png" class="img-fluid rounded-end h-100" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title text-uppercase text-warning fw-bold">Dome Palace</h5>
+                <p><i class="fa-regular fa-calendar-days"></i> 2024/2/4</p>
+                <hr>
+                <p class="card-text py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias id illo dolor aspernatur eum sequi est consequuntur placeat doloremque veniam? Fugit nulla eaque nobis distinctio fugiat necessitatibus deserunt veniam molestias animi ullam. Provident asperiores alias reprehenderit recusandae eum consectetur id?</p>
+                <hr>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-podcast"></i> podcast</button>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-clock"></i> 44 mins</button>
+                <button class="btn btn-outline-dark bg-warning text-capitalize"><i class="fa-solid fa-play"></i> play now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="bg-dark py-3">
+  <div class="container">
+    <div class="row justify-content-between gap-3">
+      <div class="card bg-light text-center mx-auto" style="width: 15rem;">
+        <div class="card-body">
+          <h5 class="card-title text-capitalize text-dark">follow instagram</h5>
+          <i class="fa-brands fa-square-instagram text-warning" style="font-size: 100px;"></i>
+          <a href="#" class="card-link text-capitalize text-decoration-none text-dark bg-warning btn py-0 px-5">go to link</a>
+        </div>
+      </div>
+      <div class="card bg-light text-center mx-auto" style="width: 15rem;">
+        <div class="card-body">
+          <h5 class="card-title text-capitalize text-dark">follow instagram</h5>
+          <i class="fa-brands fa-youtube text-warning" style="font-size: 100px;"></i>
+          <a href="#" class="card-link text-capitalize text-decoration-none text-dark bg-warning btn py-0 px-5">go to link</a>
+        </div>
+      </div>
+      <div class="card bg-light text-center mx-auto" style="width: 15rem;">
+        <div class="card-body">
+          <h5 class="card-title text-capitalize text-dark">follow facebook</h5>
+          <i class="fa-brands fa-square-facebook text-warning" style="font-size: 100px;"></i>
+          <a href="#" class="card-link text-capitalize text-decoration-none text-dark bg-warning btn py-0 px-5">go to link</a>
+        </div>
+      </div>
+      <div class="card bg-light text-center mx-auto" style="width: 15rem;">
+        <div class="card-body">
+          <h5 class="card-title text-capitalize text-dark">follow instagram</h5>
+          <i class="fa-brands fa-square-whatsapp text-warning" style="font-size: 100px;"></i>
+          <a href="#" class="card-link text-capitalize text-decoration-none text-dark bg-warning btn py-0 px-5">go to link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<footer class="bg-dark text-center text-white py-3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-4 col-sm-12">
+        <hr>
+        <div class="logo">
+          <img src="./img/logo.png" alt="" height=40> <span class="text-uppercase ms-3 fw-bold fs-4">company</span>
+        </div>
+        <hr>
+        <p>tel:+966501322844</p>
+        <p>email:abobakralmashhor@gmail.com</p>
+        <p>address:yemen,hadrmut</p>
+      </div>
+      <div class="col-xl-4 col-sm-12">
+        <hr>
+        <div class="logo">
+          <img src="./img/logo.png" alt="" height=40> <span class="text-uppercase ms-3 fw-bold fs-4">vision</span>
+        </div>
+        <hr>
+        <p>tel:+966501322844</p>
+        <p>email:abobakralmashhor@gmail.com</p>
+        <p>address:yemen,hadrmut</p>
+      </div>
+      <div class="col-xl-4 col-sm-12">
+        <hr>
+        <div class="logo">
+          <img src="./img/logo.png" alt="" height=40> <span class="text-uppercase ms-3 fw-bold fs-4">link</span>
+        </div>
+        <hr>
+        <p>home</p>
+        <p>about</p>
+        <p>trips</p>
+      </div>
+    </div>
+    <hr>
+    <h3>
+      copyright &copy; 2024 all rights reserved by abobakr almashhor
+    </h3>
+  </div>
+</footer>
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
